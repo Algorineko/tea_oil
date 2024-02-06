@@ -1,0 +1,30 @@
+<!--pages/list/list.wxml-->
+<swiper class="swiper_top" indicator-dots indicator-color="white" indicator-active-color="gray" autoplay="true" interval="5000" circular="true">
+  <swiper-item>
+    <view class="mp_item">销售</view>
+  </swiper-item>
+  <swiper-item>
+    <view class="mp_item">知识板块</view>
+  </swiper-item>
+  <swiper-item>
+    <view class="mp_item">讨论空间</view>
+  </swiper-item>
+  <swiper-item>
+    <view class="mp_item">线下体验</view>
+  </swiper-item>
+  <swiper-item>
+    <view class="mp_item">我的茶树</view>
+  </swiper-item>
+</swiper>
+<scroll-view class="mainpart" scroll-y>
+  <view>
+    <text user-select="true">内容A</text>
+    <button type="default">button</button>
+  </view>
+  <view>
+    <rich-text nodes="<h1 style='color:red;'>内容B</h1>"/>
+  </view>
+  <view>
+    <image src="/images/茶油.jpg" mode="widthFix"/>
+  </view>
+</scroll-view>
