@@ -1,0 +1,4 @@
+.arr_item{
+  color: whitesmoke;
+  background-color: rgba(202, 101, 211, 0.192);
+}

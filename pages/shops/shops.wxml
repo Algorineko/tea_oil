@@ -1,0 +1,23 @@
+<!--pages/shops/shops.wxml-->
+<view class="goods">
+  <view class="g_item" wx:for="{{goodsList}}" wx:for-item="g" wx:for-index="index" wx:key="id">
+    <image class="g_img" src="{{g.img}}" mode=""/>
+    <view class="g_content">
+      <view class="g_name">{{g.name}}</view>
+      <view class="g_info">{{g.info}}</view>
+      <view class="g_price">
+      {{g.price}}
+      <button class="g_btn" size="mini"><view>详情</view></button>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="g_bottom">--已显示所有商品--</view>
+<!-- 左侧导航栏 -->
+  <!-- <view class="left_nav">
+    <scroll-view scroll-y="true">
+      <view id="nav1" class="left_nav_item">茶油1</view>
+      <view id="nav2" class="left_nav_item">茶油2</view>
+      <view id="nav3" class="left_nav_item">茶油3</view>
+    </scroll-view>
+  </view> -->

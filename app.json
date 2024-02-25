@@ -1,16 +1,60 @@
 {
   "pages": [
     "pages/list/list",
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/knowledge/knowledge",
+    "pages/experience/experience",
+    "pages/shops/shops",
+    "pages/user/user",
+    "pages/info/info"
   ],
   "window": {
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "茶油NCU",
-    "navigationBarBackgroundColor": "#CDCD00"
+    "navigationBarTitleText": "茶油缘",
+    "navigationBarBackgroundColor": "#CDCD00",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#efefef",
+    "backgroundTextStyle":"dark",
+    "onReachBottomDistance": 50
+  },
+  "tabBar": {
+    "list":[
+      {
+        "pagePath":"pages/list/list",
+        "text":"首页",
+        "iconPath": "/images/tabs/home.png",
+        "selectedIconPath": "/images/tabs/home-active.png"
+      },
+      {
+        "pagePath": "pages/knowledge/knowledge",
+        "text": "茶知识",
+        "iconPath": "/images/tabs/book.png",
+        "selectedIconPath": "/images/tabs/book-active.png"
+      },
+      {
+        "pagePath": "pages/experience/experience",
+        "text": "茶体验",
+        "iconPath": "/images/tabs/tea.png",
+        "selectedIconPath": "/images/tabs/tea-active.png"
+      },
+      {
+        "pagePath": "pages/shops/shops",
+        "text": "商铺",
+        "iconPath": "/images/tabs/shops.png",
+        "selectedIconPath": "/images/tabs/shops-active.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "/images/tabs/user.png",
+        "selectedIconPath": "/images/tabs/user-active.png"
+      }
+    ]
   },
   "style": "v2",
   "componentFramework": "glass-easel",
   "sitemapLocation": "sitemap.json",
-  "lazyCodeLoading": "requiredComponents"
+  "lazyCodeLoading": "requiredComponents",
+  "usingComponents": {
+    "my-test":"/components/test/test"
+  }
 }

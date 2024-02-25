@@ -1,0 +1,71 @@
+/* pages/shops/shops.wxss */
+.goods{
+  width:100%;
+  background-color: rgb(238, 252, 225);
+  height: 100%;
+}
+.g_item{
+  height: 200rpx;
+  width: 100%;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  border-bottom: lightgray solid 2rpx;
+  display: flex;
+  align-items: center;
+}
+.g_img{
+  height: 180rpx;
+  width: 260rpx;
+  margin: 30rpx;
+  border-radius: 25%;
+}
+.g_name{
+  font-size: large;
+  font-weight: bolder;
+}
+.g_info{
+  font-size: smaller;
+  color: grey;
+  margin-bottom: 20rpx;
+}
+.g_price{
+  color: green;
+  font-weight:bold;
+  font-size: small;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.g_btn{
+  height: 40rpx;
+  font-size: 10rpx;
+  background-color: rgb(148, 245, 191);
+  border-radius: 45%;
+  margin:0 50rpx;
+}
+.g_btn view{
+  font-size: smaller;
+  line-height: 40rpx;
+}
+.g_bottom{
+  text-align: center;
+  font-size: small;
+  color: gray;
+}
+/* .shop_box{
+  width: 100%;
+}
+.left_nav{
+  float: left;
+  height: 100%;
+  width: 25%;
+  background-color: rgb(227, 250, 172);
+  border-right: solid lightgray 2rpx;
+  box-sizing: border-box;
+}
+.left_nav_item{
+  height: 80rpx;
+  border-bottom: lightgray 2rpx solid;
+  line-height: 80rpx;
+  text-align: center;
+} */

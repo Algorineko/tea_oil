@@ -1,0 +1,48 @@
+<!--pages/knowledge/knowledge.wxml-->
+<swiper class="swiper_top" indicator-dots indicator-color="white" indicator-active-color="gray" autoplay="true" interval="5000" circular="true">
+  <swiper-item>
+    <!-- <view class="sw_item">趣味历史</view> -->
+    <image src="/images/knowledge/klg1.jpg" mode="heightFix"/>
+  </swiper-item>
+  <swiper-item>
+    <!-- <view class="sw_item">起源与发展</view> -->
+    <image src="/images/knowledge/klg2.jpg" mode="widthFix"/>
+  </swiper-item>
+  <swiper-item>
+    <!-- <view class="sw_item">相关企业</view> -->
+    <image src="/images/knowledge/klg3.jpg" mode="widthFix"/>
+  </swiper-item>
+</swiper>
+<view class="knowledge-section">
+  <view class="section-title">你知道吗？</view>
+  <view class="knowledge-item">
+    <view class="item-icon">
+      <image src="/images/tabs/提示_tips.png" mode="aspectFit"></image>
+    </view>
+    <view class="item-content">
+      <text class="item-text">茶油富含不饱和脂肪酸，有助于降低血脂，预防心血管疾病。</text>
+      <text class="item-source">来源：中国营养学会</text>
+    </view>
+  </view>
+  <view class="knowledge-item">
+    <view class="item-icon">
+      <image src="/images/tabs/书籍_book.png" mode="aspectFit"></image>
+    </view>
+    <view class="item-content">
+      <text class="item-text">茶油中的维生素E含量丰富，具有抗氧化作用，有助于延缓衰老。</text>
+      <text class="item-source">来源：健康时报</text>
+    </view>
+  </view>
+</view>
+<view class="section-container">
+  <view class="entry-area">
+    <text class="entry-title">答题区</text>
+    <text class="user-points">当前积分: {{userPoints}}</text>
+  </view>
+  <view class="entry-area">
+    <text class="cm-title">交流社区</text>
+  </view>
+</view>
+  <view class="entry-area">
+    <text class="cm-title">礼品兑换</text>
+  </view>

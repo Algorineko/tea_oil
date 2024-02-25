@@ -1,30 +1,62 @@
 <!--pages/list/list.wxml-->
 <swiper class="swiper_top" indicator-dots indicator-color="white" indicator-active-color="gray" autoplay="true" interval="5000" circular="true">
   <swiper-item>
-    <view class="mp_item">销售</view>
+    <view class="sw_item">销售</view>
   </swiper-item>
   <swiper-item>
-    <view class="mp_item">知识板块</view>
+    <view class="sw_item">知识板块</view>
   </swiper-item>
   <swiper-item>
-    <view class="mp_item">讨论空间</view>
+    <view class="sw_item">讨论空间</view>
   </swiper-item>
   <swiper-item>
-    <view class="mp_item">线下体验</view>
+    <view class="sw_item">线下体验</view>
   </swiper-item>
   <swiper-item>
-    <view class="mp_item">我的茶树</view>
+    <view class="sw_item">我的茶树</view>
   </swiper-item>
 </swiper>
 <scroll-view class="mainpart" scroll-y>
   <view>
-    <text user-select="true">内容A</text>
-    <button type="default">button</button>
+    <text user-select="true">功德:{{gd}}</text>
+    <button type="default" bindtap="addGd" data-info="{{123}}">
+      敲电子木鱼
+    </button>
   </view>
   <view>
-    <rich-text nodes="<h1 style='color:red;'>内容B</h1>"/>
+    <text>B</text>
   </view>
   <view>
     <image src="/images/茶油.jpg" mode="widthFix"/>
   </view>
 </scroll-view>
+<view class="input_part">
+  <text>功德增加值:</text>
+  <input type="number"
+  model:value="{{add_v}}" bindinput="addValue"/>
+  <view wx:if="{{isYm}}">您已功德圆满!!!</view>
+  <button bind:tap="getInfo" type="default">get_request</button>
+  <button bind:tap="postInfo" type="default">post_request</button>
+  <!-- <view wx:for="{{arr}}" wx:key="index" class="arr_item">
+    第{{index}}项是{{item}}
+  </view> -->
+</view>
+<view class="gridList">
+  <viem class="grid_item" wx:for="{{gridList}}" wx:key="index">
+    <image src="{{item.icon}}" wx:key="id"/>
+    <text>{{item.name}}</text>
+  </viem>
+</view>
+<view class="box">
+  <navigator url="/pages/knowledge/knowledge" open-type="switchTab">导航</navigator>
+  <!-- 跳转到非tab界面 -->
+  <navigator url="/pages/info/info?name=alp&age=20">{{m1.toUpper(tabName)}}</navigator>
+  <text>{{m2.toLower(country)}}</text>
+  <my-test></my-test>
+</view>
+<wxs module="m1">
+  module.exports.toUpper=function(str){
+    return str.toUpperCase();
+  }
+</wxs>
+<wxs src="../../utils/tools.wxs" module="m2"></wxs>

@@ -1,0 +1,6 @@
+<!--pages/info/info.wxml-->
+<text>pages/info/info.wxml</text>
+<!-- 返回上一界面 -->
+<navigator open-type="navigateBack" delta="1">back1</navigator>
+<button bind:tap="getColors" type="primary">getColors</button>
+<view wx:for="{{colorList}}" wx:key="index" class="num-item" style="background-color: rgba({{item}});">{{item}}</view>
