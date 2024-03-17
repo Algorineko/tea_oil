@@ -9,6 +9,13 @@
     "miniprogram": {
       "list": [
         {
+          "name": "茶体验",
+          "pathName": "pages/experience/experience",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
           "name": "茶知识",
           "pathName": "pages/knowledge/knowledge",
           "query": "",

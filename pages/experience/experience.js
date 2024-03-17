@@ -5,7 +5,56 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    items: [
+      {
+        name: '分区一',
+        pictures: [
+          { url: '/images/experience/exp1.jpg', name: '采茶圣地' },
+        ]
+      },
+      {
+        name: '分区一',
+        pictures: [
+          { url: '/images/experience/exp1.jpg', name: '茶油美食' },
+        ]
+      },
+      {
+        name: '分区一',
+        pictures: [
+          { url: '/images/experience/exp1.jpg', name: '体验活动' },
+        ]
+      },
+      {
+        name: '分区一',
+        pictures: [
+          { url: '/images/experience/exp1.jpg', name: '农家小住' },
+        ]
+      },
+      {
+        name: '分区一',
+        pictures: [
+          { url: '/images/experience/exp1.jpg', name: '线上制油' },
+        ]
+      },
+      {
+        name: '分区一',
+        pictures: [
+          { url: '/images/experience/exp1.jpg', name: '旅游' },
+        ]
+      },
+      {
+        name: '分区一',
+        pictures: [
+          { url: '/images/experience/exp1.jpg', name: '待定' },
+        ]
+      },
+      {
+        name: '分区一',
+        pictures: [
+          { url: '/images/experience/exp1.jpg', name: '待定' },
+        ]
+      }
+    ]
   },
 
   /**

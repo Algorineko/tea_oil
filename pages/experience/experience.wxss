@@ -1,1 +1,80 @@
 /* pages/experience/experience.wxss */
+.swiper_top{
+  height: 200rpx;
+  background-color: rgb(243, 247, 224);
+  border-bottom: rgb(196, 209, 183) 4rpx solid;
+  box-shadow: 0rpx 10rpx 15px 6rpx #d8e7d8;
+}
+.swiper_top image{
+  width: 10rpx;
+}
+.sw_item{
+  height: 100%;
+  text-align: center;
+  line-height: 100px;
+  background-color: rgb(248, 247, 189);
+}
+.sp_text{
+  position: relative;
+  z-index: 99;
+  text-align: center;
+  font-weight: 550;
+  font-size: 35rpx;
+  color: #000;
+  left: 35rpx;
+  bottom: 80rpx;
+}
+
+.section-display {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.section-row {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-bottom: 10rpx;
+}
+.section-box {
+  width: 160rpx;
+  margin-bottom: 10rpx;
+  margin-left: 15rpx;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: #f8f4d4; 
+  border-radius: 8px; 
+}
+.section-image {
+  width: 100rpx;
+  height: 100px; 
+}
+.section-name {
+  font-size: 14px;
+  color: #333;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.bt-model-container {
+  margin: 20rpx;
+  margin-top: 0rpx;
+  padding: 50rpx;
+  background-color: #fff9d7; 
+  border: 5px solid #ffeb3b; 
+  border-radius: 15px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+.bt-model-box {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #fff; 
+  border: 2px dashed #ffca28; 
+  border-radius: 10px; 
+  transition: border-color 0.3s; 
+}

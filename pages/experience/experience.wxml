@@ -1,2 +1,29 @@
 <!--pages/experience/experience.wxml-->
-<text>pages/experience/experience.wxml</text>
+<swiper class="swiper_top" indicator-dots indicator-color="white" indicator-active-color="gray" autoplay="true" interval="5000" circular="true">
+  <swiper-item>
+    <image src="/images/experience/exp1.jpg" mode="heightFix"/>
+  </swiper-item>
+  <swiper-item>
+    <image src="/images/experience/exp1.jpg" mode="widthFix"/>
+  </swiper-item>
+  <swiper-item>
+    <image src="/images/experience/exp1.jpg" mode="widthFix"/>
+  </swiper-item>
+</swiper>
+
+<view class="section-display">
+  <block wx:for="{{items}}" wx:key="index">
+    <view class="section-row">
+      <view class="section-box" wx:for="{{item.pictures}}" wx:key="url">
+        <image class="section-image" src="{{item.url}}" mode="aspectFit" />
+        <text class="section-name">{{item.name}}</text>
+      </view>
+    </view>
+  </block>
+</view>
+
+<view class="bt-model-container">
+  <view class="bt-model-box">
+    <!-- 内容待定 -->
+  </view>
+</view>
